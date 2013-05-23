@@ -1,16 +1,13 @@
-trytond_account_coop_ar
-=======================
+# trytond_account_coop_ar
 
-The account_ar module of the Tryton application platform.
+The `account_coop_ar` module of the Tryton application platform.
 See *tryton.cfg*
 
-Installing
-----------
+## Installing
 
 See INSTALL
 
-Support
--------
+##Support
 
 If you encounter any problems with this module, please don't hesitate to ask
 questions on the module bug tracker:
@@ -19,10 +16,10 @@ questions on the module bug tracker:
 
 For more information please contact the programmers at
 
-  Gcoop
-  --------------
-  website: http://www.gcoop.coop/
-  email: info@gcoop.coop
+    Gcoop
+    --------------
+    website: http://www.gcoop.coop/
+    email: info@gcoop.coop
 
 If you encounter any problems with Tryton, please don't hesitate to ask
 questions on the Tryton bug tracker, mailing list, wiki or IRC channel:
@@ -33,13 +30,11 @@ questions on the Tryton bug tracker, mailing list, wiki or IRC channel:
   irc://irc.freenode.net/tryton
   irc://irc.freenode.net/tryton-es
 
-License
--------
+##License
 
 See LICENSE
 
-Copyright
----------
+## Copyright
 
 See COPYRIGHT
 
