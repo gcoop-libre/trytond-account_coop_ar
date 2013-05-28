@@ -175,7 +175,7 @@ class WierdXMLGenerator(object):
 
         if kind != 'view':
             type = self.account_types[row['tipo']]
-            record.add_field(Field('type', value=type))
+            record.add_field(Field('type', {'ref': type}))
 
         record.add_field(Field('parent', {'ref': parent}))
 
