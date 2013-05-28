@@ -1,4 +1,4 @@
-# -*- coding: utf8 -*-
+# -*' coding: utf8 -*-
 
 import csv
 import xml.etree.ElementTree as ET
@@ -19,6 +19,21 @@ def normalizar_string(unicode_string):
 def sanitize(unicode_string):
     """cleanup an string, to use as id"""
     return normalizar_string(unicode_string).replace(' ', '_').replace('.', '')
+
+def indent(elem, level=0):
+    i = "\n" + level*"  "
+    if len(elem):
+        if not elem.text or not elem.text.strip():
+            elem.text = i + "  "
+        if not elem.tail or not elem.tail.strip():
+            elem.tail = i
+        for elem in elem:
+            indent(elem, level+1)
+        if not elem.tail or not elem.tail.strip():
+            elem.tail = i
+    else:
+        if level and (not elem.tail or not elem.tail.strip()):
+            elem.tail = i
 
 
 class XMLElement(object):
@@ -56,7 +71,7 @@ class Field(XMLElement):
 class Record(XMLElement):
     """Represents a record of a tryton model"""
     def __init__(self, model, id):
-        attrs = {'model': model, 'id': id}
+        attrs = {'model': model, 'id': id,}
         super(Record, self).__init__('record', attrs)
 
     def add_field(self, field):
@@ -131,7 +146,7 @@ class WierdXMLGenerator(object):
         #FIXME unicode
         group = row['GRUPO']
         code = row['NUMERO']
-        kind = self.types.get(row['clase'], '')
+        kind = self.types[row['clase']]
         description = row['DESCRIPCION'].decode('utf8')
 
         id = sanitize(description)
@@ -187,4 +202,6 @@ if __name__ == '__main__':
     cuentas = 'cuentas.csv'
     g = WierdXMLGenerator(tipos, cuentas)
     with open('accounts_coop_ar.xml', 'w') as fh:
-        fh.write(imprimir_lindo(ET.tostring(g.inflate()._root)))
+        indent(g.inflate()._root)
+        g.document.tree.write(fh, 'utf8')
+        #fh.write(indent(g.inflate()._root).tostring())
