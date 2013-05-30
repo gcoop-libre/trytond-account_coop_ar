@@ -1,4 +1,3 @@
-<?xml version='1.0' encoding='utf8'?>
 <tryton>
   <data>
     <record id="ar" model="account.account.type.template">

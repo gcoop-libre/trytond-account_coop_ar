@@ -203,5 +203,5 @@ if __name__ == '__main__':
     g = WierdXMLGenerator(tipos, cuentas)
     with open('accounts_coop_ar.xml', 'w') as fh:
         indent(g.inflate()._root)
-        g.document.tree.write(fh, 'utf8')
+        g.document.tree.write(fh, 'utf-8')
         #fh.write(indent(g.inflate()._root).tostring())
