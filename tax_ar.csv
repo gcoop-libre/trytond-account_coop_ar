@@ -1,0 +1,10 @@
+nombre,descripción,porcentaje,tipo,invoice account,numero de cuenta
+"IVA 10,5","IVA 10,5 VENTAS",10.5,porcentaje,IVA Débito Fiscal,21411
+IVA 21 VENTAS,IVA 21 VENTAS,21,porcentaje,IVA Débito Fiscal,21411
+IVA 27 ,IVA 27 VENTAS,27,porcentaje,IVA Débito Fiscal,21411
+"IVA 10,5 COMPRAS","IVA 10,5 COMPRAS",10.5,porcentaje,IVA Crédito Fiscal,1131021
+IVA 21 COMPRAS,IVA 21 COMPRAS,21,porcentaje,IVA Crédito Fiscal,1131021
+IVA 27 COMPRAS,IVA 27 COMPRAS,27,porcentaje,IVA Crédito Fiscal,1131021
+Ingresos Brutos,IIBB,3,porcentaje,Impuesto sobre los Ingresos Brutos a Pagar,21421
+Percepciones IIBB,Percepciones IIBB,,,Percepciones Ingresos Brutos,1131032
+Retenciones IIBB,Retenciones IIBB,,,Retenciones Ingresos Brutos,1131031
