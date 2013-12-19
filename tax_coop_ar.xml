@@ -94,7 +94,7 @@ the full copyright notices and license terms. -->
             id="vat_21_ventas">
             <field name="name">IVA Ventas 21%</field>
             <field name="description">IVA Asociado a ventas - 21%</field>
-            <field name="percentage" eval="Decimal('21')"/>
+            <field name="rate" eval="Decimal('0.21')"/>
             <field name="type">percentage</field>
             <field name="invoice_account" ref="iva_debito_fiscal"/>
             <field name="credit_note_account" ref="iva_debito_fiscal"/>
@@ -109,7 +109,7 @@ the full copyright notices and license terms. -->
             id="vat_105_ventas">
             <field name="name">IVA Ventas 10.5%</field>
             <field name="description">IVA Asociado a ventas - 10.5%</field>
-            <field name="percentage" eval="Decimal('10.5')"/>
+            <field name="rate" eval="Decimal('0.105')"/>
             <field name="type">percentage</field>
             <field name="invoice_account" ref="iva_debito_fiscal"/>
             <field name="credit_note_account" ref="iva_debito_fiscal"/>
@@ -124,7 +124,7 @@ the full copyright notices and license terms. -->
             id="vat_27_ventas">
             <field name="name">IVA Ventas 27%</field>
             <field name="description">IVA Asociado a ventas - 27%</field>
-            <field name="percentage" eval="Decimal('27')"/>
+            <field name="rate" eval="Decimal('0.27')"/>
             <field name="type">percentage</field>
             <field name="invoice_account" ref="iva_debito_fiscal"/>
             <field name="credit_note_account" ref="iva_debito_fiscal"/>
@@ -139,7 +139,7 @@ the full copyright notices and license terms. -->
             id="vat_21_compras">
             <field name="name">IVA Compras 21%</field>
             <field name="description">IVA Asociado a compras - 21%</field>
-            <field name="percentage" eval="Decimal('21')"/>
+            <field name="rate" eval="Decimal('0.21')"/>
             <field name="type">percentage</field>
             <field name="invoice_account" ref="iva_credito_fiscal"/>
             <field name="credit_note_account" ref="iva_credito_fiscal"/>
@@ -154,7 +154,7 @@ the full copyright notices and license terms. -->
             id="vat_105_compras">
             <field name="name">IVA Compras 10.5%</field>
             <field name="description">IVA Asociado a compras - 10.5%</field>
-            <field name="percentage" eval="Decimal('10.5')"/>
+            <field name="rate" eval="Decimal('0.105')"/>
             <field name="type">percentage</field>
             <field name="invoice_account" ref="iva_credito_fiscal"/>
             <field name="credit_note_account" ref="iva_credito_fiscal"/>
@@ -169,7 +169,7 @@ the full copyright notices and license terms. -->
             id="vat_27_compras">
             <field name="name">IVA Compras 27%</field>
             <field name="description">IVA Asociado a compras - 27%</field>
-            <field name="percentage" eval="Decimal('27')"/>
+            <field name="rate" eval="Decimal('0.27')"/>
             <field name="type">percentage</field>
             <field name="invoice_account" ref="iva_credito_fiscal"/>
             <field name="credit_note_account" ref="iva_credito_fiscal"/>
