@@ -1,5 +1,5 @@
-Installing trytond_account_ar
-=============================
+Installing trytond_account_coop_ar
+==================================
 
 Prerequisites
 -------------
@@ -27,4 +27,4 @@ documentation:
   http://docs.python.org/inst/inst.html
 
 To use without installation, extract the archive into ``trytond/modules`` with
-the directory name account_ar.
+the directory name account_coop_ar.
