@@ -122,6 +122,7 @@
       <field name="kind">receivable</field>
       <field name="type" ref="account_type_activo" />
       <field name="parent" ref="creditos" />
+      <field name="party_required" eval="True"/>
     </record>
     <record id="deudores_varios" model="account.account.template">
       <field name="name">Deudores Varios</field>
@@ -131,6 +132,7 @@
       <field name="kind">receivable</field>
       <field name="type" ref="account_type_activo" />
       <field name="parent" ref="creditos" />
+      <field name="party_required" eval="True"/>
     </record>
     <record id="deudores_por_servicios_del_exterior" model="account.account.template">
       <field name="name">Deudores por Servicios del Exterior</field>
@@ -140,6 +142,7 @@
       <field name="kind">receivable</field>
       <field name="type" ref="account_type_activo" />
       <field name="parent" ref="creditos" />
+      <field name="party_required" eval="True"/>
     </record>
     <record id="deudores_por_venta_de_equipos" model="account.account.template">
       <field name="name">Deudores por Venta de Equipos</field>
@@ -149,6 +152,7 @@
       <field name="kind">receivable</field>
       <field name="type" ref="account_type_activo" />
       <field name="parent" ref="creditos" />
+      <field name="party_required" eval="True"/>
     </record>
     <record id="otros_creditos" model="account.account.template">
       <field name="name">Otros Créditos</field>
@@ -164,6 +168,7 @@
       <field name="kind">receivable</field>
       <field name="type" ref="account_type_activo" />
       <field name="parent" ref="otros_creditos" />
+      <field name="party_required" eval="True"/>
     </record>
     <record id="afip_creditos" model="account.account.template">
       <field name="name">A.F.I.P. Créditos</field>
@@ -187,6 +192,7 @@
       <field name="kind">receivable</field>
       <field name="type" ref="account_type_activo" />
       <field name="parent" ref="afip_creditos" />
+      <field name="party_required" eval="True"/>
     </record>
     <record id="iva_percepciones" model="account.account.template">
       <field name="name">IVA Percepciones</field>
@@ -195,6 +201,7 @@
       <field name="kind">receivable</field>
       <field name="type" ref="account_type_activo" />
       <field name="parent" ref="afip_creditos" />
+      <field name="party_required" eval="True"/>
     </record>
     <record id="iva_saldo_a_favor" model="account.account.template">
       <field name="name">Iva Saldo a Favor</field>
@@ -203,6 +210,7 @@
       <field name="kind">receivable</field>
       <field name="type" ref="account_type_activo" />
       <field name="parent" ref="afip_creditos" />
+      <field name="party_required" eval="True"/>
     </record>
     <record id="computo_34%_ley_25413" model="account.account.template">
       <field name="name">Computo 34% Ley 25413</field>
@@ -211,6 +219,7 @@
       <field name="kind">receivable</field>
       <field name="type" ref="account_type_activo" />
       <field name="parent" ref="afip_creditos" />
+      <field name="party_required" eval="True"/>
     </record>
     <record id="retencion_imp_a_las_ganancias" model="account.account.template">
       <field name="name">Retención Imp. a las Ganancias</field>
@@ -219,6 +228,7 @@
       <field name="kind">receivable</field>
       <field name="type" ref="account_type_activo" />
       <field name="parent" ref="afip_creditos" />
+      <field name="party_required" eval="True"/>
     </record>
     <record id="saldo_a_favor_imp_a_las_ganancias" model="account.account.template">
       <field name="name">Saldo a Favor Imp. a las Ganancias</field>
@@ -227,6 +237,7 @@
       <field name="kind">receivable</field>
       <field name="type" ref="account_type_activo" />
       <field name="parent" ref="afip_creditos" />
+      <field name="party_required" eval="True"/>
     </record>
     <record id="anticipo_ley_23427" model="account.account.template">
       <field name="name">Anticipo Ley 23427</field>
@@ -235,6 +246,7 @@
       <field name="kind">receivable</field>
       <field name="type" ref="account_type_activo" />
       <field name="parent" ref="afip_creditos" />
+      <field name="party_required" eval="True"/>
     </record>
     <record id="iva_pagos_a_cuenta" model="account.account.template">
       <field name="name">Iva pagos a cuenta</field>
@@ -243,6 +255,7 @@
       <field name="kind">receivable</field>
       <field name="type" ref="account_type_activo" />
       <field name="parent" ref="afip_creditos" />
+      <field name="party_required" eval="True"/>
     </record>
     <record id="dgr" model="account.account.template">
       <field name="name">D.G.R.</field>
@@ -257,6 +270,7 @@
       <field name="kind">receivable</field>
       <field name="type" ref="account_type_activo" />
       <field name="parent" ref="dgr" />
+      <field name="party_required" eval="True"/>
     </record>
     <record id="percepciones_ingresos_brutos" model="account.account.template">
       <field name="name">Percepciones Ingresos Brutos</field>
@@ -265,6 +279,7 @@
       <field name="kind">receivable</field>
       <field name="type" ref="account_type_activo" />
       <field name="parent" ref="dgr" />
+      <field name="party_required" eval="True"/>
     </record>
     <record id="ingresos_brutos_saldo_a_favor" model="account.account.template">
       <field name="name">Ingresos Brutos Saldo a Favor</field>
@@ -273,6 +288,7 @@
       <field name="kind">receivable</field>
       <field name="type" ref="account_type_activo" />
       <field name="parent" ref="dgr" />
+      <field name="party_required" eval="True"/>
     </record>
     <record id="gastos_a_recuperar" model="account.account.template">
       <field name="name">Gastos a Recuperar</field>
@@ -281,6 +297,7 @@
       <field name="kind">receivable</field>
       <field name="type" ref="account_type_activo" />
       <field name="parent" ref="otros_creditos" />
+      <field name="party_required" eval="True"/>
     </record>
     <record id="anticipo_a_proveedores" model="account.account.template">
       <field name="name">Anticipo a Proveedores</field>
@@ -289,6 +306,7 @@
       <field name="kind">receivable</field>
       <field name="type" ref="account_type_activo" />
       <field name="parent" ref="otros_creditos" />
+      <field name="party_required" eval="True"/>
     </record>
     <record id="bienes_de_cambio" model="account.account.template">
       <field name="name">Bienes de Cambio</field>
@@ -400,6 +418,7 @@
       <field name="kind">payable</field>
       <field name="type" ref="account_type_pasivo" />
       <field name="parent" ref="deudas_comerciales" />
+      <field name="party_required" eval="True"/>
     </record>
     <record id="honorarios_a_pagar" model="account.account.template">
       <field name="name">Honorarios a Pagar</field>
@@ -409,6 +428,7 @@
       <field name="kind">payable</field>
       <field name="type" ref="account_type_pasivo" />
       <field name="parent" ref="deudas_comerciales" />
+      <field name="party_required" eval="True"/>
     </record>
     <record id="honorarios_servadma_pagar" model="account.account.template">
       <field name="name">Honorarios Serv.Adm.a Pagar</field>
@@ -418,6 +438,7 @@
       <field name="kind">payable</field>
       <field name="type" ref="account_type_pasivo" />
       <field name="parent" ref="deudas_comerciales" />
+      <field name="party_required" eval="True"/>
     </record>
     <record id="deudas_financieras" model="account.account.template">
       <field name="name">Deudas Financieras</field>
@@ -432,6 +453,7 @@
       <field name="kind">payable</field>
       <field name="type" ref="account_type_pasivo" />
       <field name="parent" ref="deudas_financieras" />
+      <field name="party_required" eval="True"/>
     </record>
     <record id="transfbancarias_diferidas" model="account.account.template">
       <field name="name">Transf.Bancarias Diferidas</field>
@@ -440,6 +462,7 @@
       <field name="kind">payable</field>
       <field name="type" ref="account_type_pasivo" />
       <field name="parent" ref="deudas_financieras" />
+      <field name="party_required" eval="True"/>
     </record>
     <record id="deudas_sociales" model="account.account.template">
       <field name="name">Deudas Sociales</field>
@@ -454,6 +477,7 @@
       <field name="kind">payable</field>
       <field name="type" ref="account_type_pasivo" />
       <field name="parent" ref="deudas_sociales" />
+      <field name="party_required" eval="True"/>
     </record>
     <record id="capital_coop_a_reintegrar" model="account.account.template">
       <field name="name">Capital Coop. a Reintegrar</field>
@@ -462,6 +486,7 @@
       <field name="kind">payable</field>
       <field name="type" ref="account_type_pasivo" />
       <field name="parent" ref="deudas_sociales" />
+      <field name="party_required" eval="True"/>
     </record>
     <record id="retornos_a_pagar" model="account.account.template">
       <field name="name">Retornos a Pagar</field>
@@ -470,6 +495,7 @@
       <field name="kind">payable</field>
       <field name="type" ref="account_type_pasivo" />
       <field name="parent" ref="deudas_sociales" />
+      <field name="party_required" eval="True"/>
     </record>
     <record id="deudas_fiscales" model="account.account.template">
       <field name="name">Deudas Fiscales</field>
@@ -498,6 +524,7 @@
       <field name="kind">payable</field>
       <field name="type" ref="account_type_pasivo" />
       <field name="parent" ref="afip_deuda" />
+      <field name="party_required" eval="True"/>
     </record>
     <record id="impuesto_a_las_ganancias_a_pagar" model="account.account.template">
       <field name="name">Impuesto a las Ganancias a Pagar</field>
@@ -506,6 +533,7 @@
       <field name="kind">payable</field>
       <field name="type" ref="account_type_pasivo" />
       <field name="parent" ref="afip_deuda" />
+      <field name="party_required" eval="True"/>
     </record>
     <record id="impuesto_ley_23427_a_pagar" model="account.account.template">
       <field name="name">Impuesto Ley 23427 a Pagar</field>
@@ -514,6 +542,7 @@
       <field name="kind">payable</field>
       <field name="type" ref="account_type_pasivo" />
       <field name="parent" ref="afip_deuda" />
+      <field name="party_required" eval="True"/>
     </record>
     <record id="plan_facilidades_d478079" model="account.account.template">
       <field name="name">Plan Facilidades D478079</field>
@@ -522,6 +551,7 @@
       <field name="kind">payable</field>
       <field name="type" ref="account_type_pasivo" />
       <field name="parent" ref="afip_deuda" />
+      <field name="party_required" eval="True"/>
     </record>
     <record id="ret_ganancias_a_depositar" model="account.account.template">
       <field name="name">Ret. Ganancias a Depositar</field>
@@ -530,6 +560,7 @@
       <field name="kind">payable</field>
       <field name="type" ref="account_type_pasivo" />
       <field name="parent" ref="afip_deuda" />
+      <field name="party_required" eval="True"/>
     </record>
     <record id="dgr_2142" model="account.account.template">
       <field name="name">D.G.R.</field>
@@ -544,6 +575,7 @@
       <field name="kind">payable</field>
       <field name="type" ref="account_type_pasivo" />
       <field name="parent" ref="dgr_2142" />
+      <field name="party_required" eval="True"/>
     </record>
     <record id="otras_deudas" model="account.account.template">
       <field name="name">Otras Deudas</field>
@@ -564,6 +596,7 @@
       <field name="kind">payable</field>
       <field name="type" ref="account_type_pasivo" />
       <field name="parent" ref="acreedores_varios" />
+      <field name="party_required" eval="True"/>
     </record>
     <record id="prestamos_asociados" model="account.account.template">
       <field name="name">Prestamos Asociados</field>
@@ -572,6 +605,7 @@
       <field name="kind">payable</field>
       <field name="type" ref="account_type_pasivo" />
       <field name="parent" ref="acreedores_varios" />
+      <field name="party_required" eval="True"/>
     </record>
     <record id="pasivo_no_corriente" model="account.account.template">
       <field name="name">Pasivo No Corriente</field>
