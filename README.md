@@ -1,6 +1,7 @@
 # trytond_account_coop_ar
 
-The `account_coop_ar` module of the Tryton application platform.
+The Tryton `account_coop_ar` module add an account chart template for Cooperative Argentina
+
 See *tryton.cfg*
 
 ## Installing
