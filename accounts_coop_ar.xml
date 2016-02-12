@@ -14,15 +14,24 @@
       <field eval="10" name="sequence" />
       <field name="parent" ref="ar" />
     </record>
+    <record id="account_type_template_beneficio" model="account.account.type.template">
+      <field name="name">Beneficio</field>
+      <field name="parent" ref="ar"/>
+      <field name="sequence" eval="10"/>
+      <field name="income_statement" eval="True"/>
+      <field name="display_balance">credit-debit</field>
+    </record>
     <record id="account_type_ingreso" model="account.account.type.template">
       <field name="name">Ingreso</field>
       <field eval="10" name="sequence" />
-      <field name="parent" ref="ar" />
+      <field name="parent" ref="account_type_template_beneficio" />
+      <field name="display_balance">credit-debit</field>
     </record>
     <record id="account_type_egreso" model="account.account.type.template">
       <field name="name">Egreso</field>
       <field eval="10" name="sequence" />
-      <field name="parent" ref="ar" />
+      <field name="parent" ref="account_type_template_beneficio" />
+      <field name="display_balance">credit-debit</field>
     </record>
     <record id="account_type_patrimonio_neto" model="account.account.type.template">
       <field name="name">Patrimonio Neto</field>
