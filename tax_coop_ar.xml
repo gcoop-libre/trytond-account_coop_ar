@@ -85,6 +85,22 @@ the full copyright notices and license terms. -->
             <field name="account" ref="root"/>
         </record>
 
+        <record model="account.tax.code.template"
+            id="vat_code_iva_venta0">
+            <field name="name">IVA Ventas 0</field>
+            <field name="code">07</field>
+            <field name="parent" ref="vat_code_iva"/>
+            <field name="account" ref="root"/>
+        </record>
+
+        <record model="account.tax.code.template"
+            id="vat_code_iva_compra0">
+            <field name="name">IVA Compras 0</field>
+            <field name="code">08</field>
+            <field name="parent" ref="vat_code_iva"/>
+            <field name="account" ref="root"/>
+        </record>
+
 
 
 #
@@ -136,6 +152,21 @@ the full copyright notices and license terms. -->
         </record>
 
         <record model="account.tax.template"
+            id="vat_0_ventas">
+            <field name="name">IVA Ventas 0%</field>
+            <field name="description">IVA Asociado a ventas - 0%</field>
+            <field name="rate" eval="Decimal('0.0')"/>
+            <field name="type">percentage</field>
+            <field name="invoice_account" ref="iva_debito_fiscal"/>
+            <field name="credit_note_account" ref="iva_debito_fiscal"/>
+            <field name="invoice_base_code" ref="vat_code_iva_venta0"/>
+            <field name="credit_note_base_code" ref="vat_code_iva_venta0"/>
+            <field name="credit_note_base_sign" eval="-1"/>
+            <field name="account" ref="root"/>
+            <field name="group" ref="grupo_iva"/>
+        </record>
+
+        <record model="account.tax.template"
             id="vat_21_compras">
             <field name="name">IVA Compras 21%</field>
             <field name="description">IVA Asociado a compras - 21%</field>
@@ -175,6 +206,21 @@ the full copyright notices and license terms. -->
             <field name="credit_note_account" ref="iva_credito_fiscal"/>
             <field name="invoice_base_code" ref="vat_code_iva_compra27"/>
             <field name="credit_note_base_code" ref="vat_code_iva_compra27"/>
+            <field name="credit_note_base_sign" eval="-1"/>
+            <field name="account" ref="root"/>
+            <field name="group" ref="grupo_iva"/>
+        </record>
+
+        <record model="account.tax.template"
+            id="vat_0_compras">
+            <field name="name">IVA Compras 0%</field>
+            <field name="description">IVA Asociado a compras - 0%</field>
+            <field name="rate" eval="Decimal('0.0')"/>
+            <field name="type">percentage</field>
+            <field name="invoice_account" ref="iva_credito_fiscal"/>
+            <field name="credit_note_account" ref="iva_credito_fiscal"/>
+            <field name="invoice_base_code" ref="vat_code_iva_compra0"/>
+            <field name="credit_note_base_code" ref="vat_code_iva_compra0"/>
             <field name="credit_note_base_sign" eval="-1"/>
             <field name="account" ref="root"/>
             <field name="group" ref="grupo_iva"/>
