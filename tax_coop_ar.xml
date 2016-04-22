@@ -8,10 +8,17 @@ the full copyright notices and license terms. -->
 # Tax Group
 #
         <record model="account.tax.group"
-            id="grupo_iva">
-            <field name="name">IVA</field>
-            <field name="code">IVA</field>
-            <field name="kind">both</field>
+            id="grupo_iva_compra">
+            <field name="name">IVA Compras</field>
+            <field name="code">IVA Compras</field>
+            <field name="kind">purchase</field>
+        </record>
+
+        <record model="account.tax.group"
+            id="grupo_iva_venta">
+            <field name="name">IVA Ventas</field>
+            <field name="code">IVA Ventas</field>
+            <field name="kind">sale</field>
         </record>
 
 #
@@ -118,7 +125,7 @@ the full copyright notices and license terms. -->
             <field name="credit_note_base_code" ref="vat_code_iva_venta21"/>
             <field name="credit_note_base_sign" eval="-1"/>
             <field name="account" ref="root"/>
-            <field name="group" ref="grupo_iva"/>
+            <field name="group" ref="grupo_iva_venta"/>
         </record>
 
         <record model="account.tax.template"
@@ -133,7 +140,7 @@ the full copyright notices and license terms. -->
             <field name="credit_note_base_code" ref="vat_code_iva_venta105"/>
             <field name="credit_note_base_sign" eval="-1"/>
             <field name="account" ref="root"/>
-            <field name="group" ref="grupo_iva"/>
+            <field name="group" ref="grupo_iva_venta"/>
         </record>
 
         <record model="account.tax.template"
@@ -148,7 +155,7 @@ the full copyright notices and license terms. -->
             <field name="credit_note_base_code" ref="vat_code_iva_venta27"/>
             <field name="credit_note_base_sign" eval="-1"/>
             <field name="account" ref="root"/>
-            <field name="group" ref="grupo_iva"/>
+            <field name="group" ref="grupo_iva_venta"/>
         </record>
 
         <record model="account.tax.template"
@@ -163,7 +170,7 @@ the full copyright notices and license terms. -->
             <field name="credit_note_base_code" ref="vat_code_iva_venta0"/>
             <field name="credit_note_base_sign" eval="-1"/>
             <field name="account" ref="root"/>
-            <field name="group" ref="grupo_iva"/>
+            <field name="group" ref="grupo_iva_venta"/>
         </record>
 
         <record model="account.tax.template"
@@ -178,7 +185,7 @@ the full copyright notices and license terms. -->
             <field name="credit_note_base_code" ref="vat_code_iva_compra21"/>
             <field name="credit_note_base_sign" eval="-1"/>
             <field name="account" ref="root"/>
-            <field name="group" ref="grupo_iva"/>
+            <field name="group" ref="grupo_iva_compra"/>
         </record>
 
         <record model="account.tax.template"
@@ -193,7 +200,7 @@ the full copyright notices and license terms. -->
             <field name="credit_note_base_code" ref="vat_code_iva_compra105"/>
             <field name="credit_note_base_sign" eval="-1"/>
             <field name="account" ref="root"/>
-            <field name="group" ref="grupo_iva"/>
+            <field name="group" ref="grupo_iva_compra"/>
         </record>
 
         <record model="account.tax.template"
@@ -208,7 +215,7 @@ the full copyright notices and license terms. -->
             <field name="credit_note_base_code" ref="vat_code_iva_compra27"/>
             <field name="credit_note_base_sign" eval="-1"/>
             <field name="account" ref="root"/>
-            <field name="group" ref="grupo_iva"/>
+            <field name="group" ref="grupo_iva_compra"/>
         </record>
 
         <record model="account.tax.template"
@@ -223,7 +230,7 @@ the full copyright notices and license terms. -->
             <field name="credit_note_base_code" ref="vat_code_iva_compra0"/>
             <field name="credit_note_base_sign" eval="-1"/>
             <field name="account" ref="root"/>
-            <field name="group" ref="grupo_iva"/>
+            <field name="group" ref="grupo_iva_compra"/>
         </record>
 
     </data>
