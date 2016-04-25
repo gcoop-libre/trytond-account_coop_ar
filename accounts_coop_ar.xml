@@ -164,6 +164,26 @@
       <field name="parent" ref="creditos" />
       <field name="party_required" eval="True"/>
     </record>
+    <record id="deudores_por_ventas" model="account.account.template">
+      <field name="name">Deudores por Ventas</field>
+      <field name="code">1135</field>
+      <field eval="True" name="deferral" />
+      <field eval="True" name="reconcile" />
+      <field name="kind">receivable</field>
+      <field name="type" ref="account_type_activo" />
+      <field name="parent" ref="creditos" />
+      <field name="party_required" eval="True"/>
+    </record>
+    <record id="deudores_por_ventas_al_exterior" model="account.account.template">
+      <field name="name">Deudores por Ventas al Exterior</field>
+      <field name="code">1136</field>
+      <field eval="True" name="deferral" />
+      <field eval="True" name="reconcile" />
+      <field name="kind">receivable</field>
+      <field name="type" ref="account_type_activo" />
+      <field name="parent" ref="creditos" />
+      <field name="party_required" eval="True"/>
+    </record>
     <record id="otros_creditos" model="account.account.template">
       <field name="name">Otros Créditos</field>
       <field name="code">11310*</field>
