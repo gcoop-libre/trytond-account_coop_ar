@@ -479,20 +479,20 @@
       <field name="code">2121</field>
       <field eval="True" name="deferral" />
       <field eval="True" name="reconcile" />
-      <field name="kind">payable</field>
+      <field name="kind">other</field>
       <field name="type" ref="account_type_pasivo" />
       <field name="parent" ref="deudas_financieras" />
-      <field name="party_required" eval="True"/>
+      <field name="party_required" eval="False"/>
     </record>
     <record id="transfbancarias_diferidas" model="account.account.template">
       <field name="name">Transf.Bancarias Diferidas</field>
       <field name="code">2122</field>
       <field eval="True" name="deferral" />
-      <field name="kind">payable</field>
+      <field name="kind">other</field>
       <field eval="True" name="reconcile" />
       <field name="type" ref="account_type_pasivo" />
       <field name="parent" ref="deudas_financieras" />
-      <field name="party_required" eval="True"/>
+      <field name="party_required" eval="False"/>
     </record>
     <record id="deudas_sociales" model="account.account.template">
       <field name="name">Deudas Sociales</field>
