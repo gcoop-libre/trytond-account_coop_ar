@@ -769,6 +769,20 @@
       <field name="type" ref="account_type_ingreso" />
       <field name="parent" ref="ingresos" />
     </record>
+    <record id="ingresos_por_ventas" model="account.account.template">
+      <field name="name">Ingresos por Ventas</field>
+      <field name="code">515</field>
+      <field name="kind">revenue</field>
+      <field name="type" ref="account_type_ingreso" />
+      <field name="parent" ref="ingresos" />
+    </record>
+    <record id="ingresos_por_ventas_al_exterior" model="account.account.template">
+      <field name="name">Ingresos por Ventas al Exterior</field>
+      <field name="code">516</field>
+      <field name="kind">revenue</field>
+      <field name="type" ref="account_type_ingreso" />
+      <field name="parent" ref="ingresos" />
+    </record>
     <record id="egresos" model="account.account.template">
       <field name="name">Egresos</field>
       <field name="code">52*</field>
