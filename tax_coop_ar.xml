@@ -10,15 +10,22 @@ the full copyright notices and license terms. -->
         <record model="account.tax.group"
             id="grupo_iva_compra">
             <field name="name">IVA Compras</field>
-            <field name="code">IVA Compras</field>
+            <field name="code">IVA</field>
             <field name="kind">purchase</field>
         </record>
 
         <record model="account.tax.group"
             id="grupo_iva_venta">
             <field name="name">IVA Ventas</field>
-            <field name="code">IVA Ventas</field>
+            <field name="code">IVA</field>
             <field name="kind">sale</field>
+        </record>
+
+        <record model="account.tax.group"
+            id="grupo_percepcion">
+            <field name="name">PERCEPCION</field>
+            <field name="code">PERCEPCION</field>
+            <field name="kind">purchase</field>
         </record>
 
 #
@@ -40,6 +47,12 @@ the full copyright notices and license terms. -->
         <record model="account.tax.code.template"
             id="vat_code_iva">
             <field name="name">IVA</field>
+            <field name="parent" ref="vat_code_chart_root"/>
+            <field name="account" ref="root"/>
+        </record>
+        <record model="account.tax.code.template"
+            id="code_percepciones">
+            <field name="name">PERCEPCION</field>
             <field name="parent" ref="vat_code_chart_root"/>
             <field name="account" ref="root"/>
         </record>
@@ -107,8 +120,6 @@ the full copyright notices and license terms. -->
             <field name="parent" ref="vat_code_iva"/>
             <field name="account" ref="root"/>
         </record>
-
-
 
 #
 # Tax Template
