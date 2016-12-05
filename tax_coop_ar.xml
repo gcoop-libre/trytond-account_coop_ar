@@ -356,7 +356,7 @@ the full copyright notices and license terms. -->
             <field name="credit_note_base_code" ref="code_iibb"/>
             <field name="credit_note_base_sign" eval="-1"/>
             <field name="account" ref="root"/>
-            <field name="group" ref="grupo_iibb_compra"/>
+            <field name="group" ref="grupo_iibb_venta"/>
         </record>
 
         <record model="account.tax.template"
