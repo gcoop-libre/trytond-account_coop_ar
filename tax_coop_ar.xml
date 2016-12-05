@@ -22,17 +22,17 @@ the full copyright notices and license terms. -->
         </record>
 
         <record model="account.tax.group"
-            id="grupo_percepcion">
-            <field name="name">PERCEPCION</field>
-            <field name="code">PERCEPCION</field>
-            <field name="kind">purchase</field>
+            id="grupo_iibb_venta">
+            <field name="name">IIBB Ventas</field>
+            <field name="code">IIBB</field>
+            <field name="kind">sale</field>
         </record>
 
         <record model="account.tax.group"
-            id="grupo_iibb">
-            <field name="name">IIBB</field>
+            id="grupo_iibb_compra">
+            <field name="name">IIBB Compras</field>
             <field name="code">IIBB</field>
-            <field name="kind">both</field>
+            <field name="kind">purchase</field>
         </record>
 
 #
@@ -58,8 +58,8 @@ the full copyright notices and license terms. -->
             <field name="account" ref="root"/>
         </record>
         <record model="account.tax.code.template"
-            id="code_percepciones">
-            <field name="name">PERCEPCION</field>
+            id="code_iibb">
+            <field name="name">IIBB</field>
             <field name="parent" ref="vat_code_chart_root"/>
             <field name="account" ref="root"/>
         </record>
@@ -341,6 +341,37 @@ the full copyright notices and license terms. -->
             <field name="credit_note_base_sign" eval="-1"/>
             <field name="account" ref="root"/>
             <field name="group" ref="grupo_iva_compra"/>
+        </record>
+
+        # IIBB
+        <record model="account.tax.template"
+            id="iibb_3_ventas">
+            <field name="name">IIBB Ventas 3%</field>
+            <field name="description">IIBB asociado a ventas - 3%</field>
+            <field name="rate" eval="Decimal('0.03')"/>
+            <field name="type">percentage</field>
+            <field name="invoice_account" ref="percepciones_ingresos_brutos"/>
+            <field name="credit_note_account" ref="percepciones_ingresos_brutos"/>
+            <field name="invoice_base_code" ref="code_iibb"/>
+            <field name="credit_note_base_code" ref="code_iibb"/>
+            <field name="credit_note_base_sign" eval="-1"/>
+            <field name="account" ref="root"/>
+            <field name="group" ref="grupo_iibb_compra"/>
+        </record>
+
+        <record model="account.tax.template"
+            id="iibb_3_compras">
+            <field name="name">IIBB Compras 3%</field>
+            <field name="description">IIBB asociado a compras - 3%</field>
+            <field name="rate" eval="Decimal('0.03')"/>
+            <field name="type">percentage</field>
+            <field name="invoice_account" ref="retenciones_ingresos_brutos"/>
+            <field name="credit_note_account" ref="retenciones_ingresos_brutos"/>
+            <field name="invoice_base_code" ref="code_iibb"/>
+            <field name="credit_note_base_code" ref="code_iibb"/>
+            <field name="credit_note_base_sign" eval="-1"/>
+            <field name="account" ref="root"/>
+            <field name="group" ref="grupo_iibb_compra"/>
         </record>
 
     </data>
