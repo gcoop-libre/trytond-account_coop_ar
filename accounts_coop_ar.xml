@@ -494,6 +494,16 @@
       <field name="parent" ref="deudas_financieras" />
       <field name="party_required" eval="False"/>
     </record>
+    <record id="valores_diferidos_a_pagar" model="account.account.template">
+      <field name="name">Valores diferidos a Pagar</field>
+      <field name="code">2123</field>
+      <field eval="True" name="deferral" />
+      <field name="kind">other</field>
+      <field eval="True" name="reconcile" />
+      <field name="type" ref="account_type_pasivo" />
+      <field name="parent" ref="deudas_financieras" />
+      <field name="party_required" eval="False"/>
+    </record>
     <record id="deudas_sociales" model="account.account.template">
       <field name="name">Deudas Sociales</field>
       <field name="code">213*</field>
