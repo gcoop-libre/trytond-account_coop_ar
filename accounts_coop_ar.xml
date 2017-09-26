@@ -540,6 +540,16 @@
       <field name="parent" ref="deudas_sociales" />
       <field name="party_required" eval="True"/>
     </record>
+    <record id="acreedor_asociados" model="account.account.template">
+      <field name="name">Acreedor Asociados</field>
+      <field name="code">2134</field>
+      <field eval="True" name="deferral" />
+      <field eval="True" name="reconcile" />
+      <field name="kind">payable</field>
+      <field name="type" ref="account_type_pasivo" />
+      <field name="parent" ref="deudas_sociales" />
+      <field name="party_required" eval="True"/>
+    </record>
     <record id="deudas_fiscales" model="account.account.template">
       <field name="name">Deudas Fiscales</field>
       <field name="code">214*</field>
