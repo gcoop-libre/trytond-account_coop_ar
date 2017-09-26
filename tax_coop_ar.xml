@@ -35,6 +35,19 @@ the full copyright notices and license terms. -->
             <field name="kind">purchase</field>
         </record>
 
+        <record model="account.tax.group"
+            id="grupo_percepcion_venta">
+            <field name="name">Percepcion Ventas</field>
+            <field name="code">nacional</field>
+            <field name="kind">sale</field>
+        </record>
+
+        <record model="account.tax.group"
+            id="grupo_percepcion_compra">
+            <field name="name">Percepcion Compras</field>
+            <field name="code">nacional</field>
+            <field name="kind">purchase</field>
+        </record>
 #
 # Tax Code Templates
 #
