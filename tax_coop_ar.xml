@@ -48,9 +48,25 @@ the full copyright notices and license terms. -->
             <field name="code">nacional</field>
             <field name="kind">purchase</field>
         </record>
-#
-# Tax Code Templates
-#
+
+        <!--
+        Tax Rule Templates
+        -->
+        <record model="account.tax.rule.template"
+            id="tax_rule_iva_exento_chart_root">
+            <field name="name">IVA Exento</field>
+            <field name="account" ref="root"/>
+            <field name="kind">sale</field>
+        </record>
+        <record model="account.tax.rule.line.template"
+            id="tax_rule_line_iva_exento_chart_root">
+            <field name="rule" ref="tax_rule_iva_exento_chart_root"/>
+            <field name="group" ref="grupo_iva_venta"/>
+        </record>
+
+        <!--
+        Tax Code Templates
+        -->
         <record model="account.tax.code.template"
             id="tax_code_ar">
             <field name="name">Argentinian Tax Code Chart</field>
