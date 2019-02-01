@@ -7,7 +7,7 @@ from unicodedata import normalize
 
 
 def normalizar_string(unicode_string):
-    u"""Retorna unicode_string normalizado para efectuar una búsqueda.
+    """Retorna unicode_string normalizado para efectuar una búsqueda.
 
     >>> normalizar_string(u'Mónica Viñao')
     'monica vinao'
@@ -154,7 +154,7 @@ class WierdXMLGenerator(object):
         if id in self.record_ids:
             old_id = id
             id = '_'.join([id, code])
-            print "Wups, looks like you have duplicated names using '%s' instead '%s'" % (id, old_id)
+            print("Wups, looks like you have duplicated names using '%s' instead '%s'" % (id, old_id))
 
         if kind == 'view':
             code += '*'
