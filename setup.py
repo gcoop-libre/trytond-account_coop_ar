@@ -33,9 +33,9 @@ version = info.get('version', '0.0.1')
 major_version, minor_version, _ = version.split('.', 2)
 major_version = int(major_version)
 minor_version = int(minor_version)
-name = 'gcooplibre_account_coop_ar'
+name = 'trytonar_account_coop_ar'
 
-download_url = 'https://github.com/gcoop-libre/account_coop_ar/tree/%s.%s' % (
+download_url = 'https://github.com/gcoop-libre/trytond-account_coop_ar/tree/%s.%s' % (
     major_version, minor_version)
 
 requires = []
@@ -52,7 +52,7 @@ setup(name=name,
     description='Tryton module to add an account chart template for Argentina',
     long_description=read('README'),
     author='gcoop-libre',
-    url='https://github.com/gcoop-libre/account_coop_ar',
+    url='https://github.com/gcoop-libre/trytond-account_coop_ar',
     download_url=download_url,
     package_dir={'trytond.modules.account_coop_ar': '.'},
     packages=[
