@@ -184,6 +184,36 @@
       <field name="parent" ref="creditos" />
       <field name="party_required" eval="True"/>
     </record>
+    <record id="tarjeta_de_credito_a_cobrar" model="account.account.template">
+      <field name="name">Tarjetas de créditos a cobrar</field>
+      <field name="code">1137</field>
+      <field eval="True" name="deferral" />
+      <field eval="True" name="reconcile" />
+      <field name="kind">other</field>
+      <field name="type" ref="account_type_activo" />
+      <field name="parent" ref="creditos" />
+      <field name="party_required" eval="False"/>
+    </record>
+    <record id="debitos_banco_a_cobrar" model="account.account.template">
+      <field name="name">Debitos Banco a cobrar</field>
+      <field name="code">1138</field>
+      <field eval="True" name="deferral" />
+      <field eval="True" name="reconcile" />
+      <field name="kind">other</field>
+      <field name="type" ref="account_type_activo" />
+      <field name="parent" ref="creditos" />
+      <field name="party_required" eval="False"/>
+    </record>
+    <record id="cheques_diferidos_a_cobrar" model="account.account.template">
+      <field name="name">Cheques diferidos a cobrar</field>
+      <field name="code">1139</field>
+      <field eval="True" name="deferral" />
+      <field eval="True" name="reconcile" />
+      <field name="kind">other</field>
+      <field name="type" ref="account_type_activo" />
+      <field name="parent" ref="creditos" />
+      <field name="party_required" eval="False"/>
+    </record>
     <record id="otros_creditos" model="account.account.template">
       <field name="name">Otros Créditos</field>
       <field name="code">11310*</field>
