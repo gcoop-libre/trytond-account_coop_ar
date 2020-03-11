@@ -40,12 +40,17 @@ download_url = 'https://github.com/gcoop-libre/trytond-account_coop_ar/tree/%s.%
 
 requires = []
 for dep in info.get('depends', []):
-    if not re.match(r'(ir|res)(\W|$)', dep):
+    if dep == 'account_ar':
+        requires.append(get_require_version('trytonar_%s' % dep))
+    elif not re.match(r'(ir|res)(\W|$)', dep):
         requires.append(get_require_version('trytond_%s' % dep))
 requires.append(get_require_version('trytond'))
 
 tests_require = [get_require_version('proteus')]
-dependency_links = []
+dependency_links = [
+    'https://github.com/tryton-ar/account_ar/tarball/%s.%s#egg=trytonar_account_ar-%s.%s' \
+        % (major_version, minor_version, major_version, minor_version),
+    ]
 
 setup(name=name,
     version=version,

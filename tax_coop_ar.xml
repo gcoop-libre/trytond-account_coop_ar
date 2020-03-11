@@ -4,66 +4,6 @@ The COPYRIGHT file at the top level of this repository contains
 the full copyright notices and license terms. -->
 <tryton>
     <data>
-#
-# Tax Group
-#
-        <record model="account.tax.group"
-            id="grupo_iva_compra">
-            <field name="name">IVA Compras</field>
-            <field name="code">IVA</field>
-            <field name="kind">purchase</field>
-        </record>
-
-        <record model="account.tax.group"
-            id="grupo_iva_venta">
-            <field name="name">IVA Ventas</field>
-            <field name="code">IVA</field>
-            <field name="kind">sale</field>
-        </record>
-
-        <record model="account.tax.group"
-            id="grupo_iibb_venta">
-            <field name="name">IIBB Ventas</field>
-            <field name="code">IIBB</field>
-            <field name="kind">sale</field>
-        </record>
-
-        <record model="account.tax.group"
-            id="grupo_iibb_compra">
-            <field name="name">IIBB Compras</field>
-            <field name="code">IIBB</field>
-            <field name="kind">purchase</field>
-        </record>
-
-        <record model="account.tax.group"
-            id="grupo_percepcion_venta">
-            <field name="name">Percepcion Ventas</field>
-            <field name="code">nacional</field>
-            <field name="kind">sale</field>
-        </record>
-
-        <record model="account.tax.group"
-            id="grupo_percepcion_compra">
-            <field name="name">Percepcion Compras</field>
-            <field name="code">nacional</field>
-            <field name="kind">purchase</field>
-        </record>
-
-        <!--
-        Tax Rule Templates
-        -->
-        <record model="account.tax.rule.template"
-            id="tax_rule_iva_exento_chart_root">
-            <field name="name">IVA Exento</field>
-            <field name="account" ref="root"/>
-            <field name="kind">sale</field>
-        </record>
-        <record model="account.tax.rule.line.template"
-            id="tax_rule_line_iva_exento_chart_root">
-            <field name="rule" ref="tax_rule_iva_exento_chart_root"/>
-            <field name="group" ref="grupo_iva_venta"/>
-        </record>
-
         <!--
         Tax Code Templates
         -->
@@ -175,7 +115,8 @@ the full copyright notices and license terms. -->
             <field name="invoice_account" ref="iva_debito_fiscal"/>
             <field name="credit_note_account" ref="iva_debito_fiscal"/>
             <field name="account" ref="root"/>
-            <field name="group" ref="grupo_iva_venta"/>
+            <field name="group" ref="account_ar.grupo_iva_venta"/>
+            <field name="iva_code">5</field>
         </record>
         <record model="account.tax.code.line.template"
             id="vat_code_iva_venta21-vat_21_ventas-invoice">
@@ -203,7 +144,8 @@ the full copyright notices and license terms. -->
             <field name="invoice_account" ref="iva_debito_fiscal"/>
             <field name="credit_note_account" ref="iva_debito_fiscal"/>
             <field name="account" ref="root"/>
-            <field name="group" ref="grupo_iva_venta"/>
+            <field name="group" ref="account_ar.grupo_iva_venta"/>
+            <field name="iva_code">4</field>
         </record>
         <record model="account.tax.code.line.template"
             id="vat_code_iva_venta105-vat_105_ventas-invoice">
@@ -231,7 +173,8 @@ the full copyright notices and license terms. -->
             <field name="invoice_account" ref="iva_debito_fiscal"/>
             <field name="credit_note_account" ref="iva_debito_fiscal"/>
             <field name="account" ref="root"/>
-            <field name="group" ref="grupo_iva_venta"/>
+            <field name="group" ref="account_ar.grupo_iva_venta"/>
+            <field name="iva_code">6</field>
         </record>
         <record model="account.tax.code.line.template"
             id="vat_code_iva_venta27-vat_27_ventas-invoice">
@@ -259,7 +202,8 @@ the full copyright notices and license terms. -->
             <field name="invoice_account" ref="iva_debito_fiscal"/>
             <field name="credit_note_account" ref="iva_debito_fiscal"/>
             <field name="account" ref="root"/>
-            <field name="group" ref="grupo_iva_venta"/>
+            <field name="group" ref="account_ar.grupo_iva_venta"/>
+            <field name="iva_code">3</field>
         </record>
         <record model="account.tax.code.line.template"
             id="vat_code_iva_venta0-vat_0_ventas-invoice">
@@ -287,7 +231,8 @@ the full copyright notices and license terms. -->
             <field name="invoice_account" ref="iva_debito_fiscal"/>
             <field name="credit_note_account" ref="iva_debito_fiscal"/>
             <field name="account" ref="root"/>
-            <field name="group" ref="grupo_iva_venta"/>
+            <field name="group" ref="account_ar.grupo_iva_venta"/>
+            <field name="iva_code">9</field>
         </record>
         <record model="account.tax.code.line.template"
             id="vat_code_iva_venta025-vat_025_ventas-invoice">
@@ -315,7 +260,8 @@ the full copyright notices and license terms. -->
             <field name="invoice_account" ref="iva_credito_fiscal"/>
             <field name="credit_note_account" ref="iva_credito_fiscal"/>
             <field name="account" ref="root"/>
-            <field name="group" ref="grupo_iva_compra"/>
+            <field name="group" ref="account_ar.grupo_iva_compra"/>
+            <field name="iva_code">5</field>
         </record>
         <record model="account.tax.code.line.template"
             id="vat_code_iva_compra21-vat_21_compras-invoice">
@@ -343,7 +289,8 @@ the full copyright notices and license terms. -->
             <field name="invoice_account" ref="iva_credito_fiscal"/>
             <field name="credit_note_account" ref="iva_credito_fiscal"/>
             <field name="account" ref="root"/>
-            <field name="group" ref="grupo_iva_compra"/>
+            <field name="group" ref="account_ar.grupo_iva_compra"/>
+            <field name="iva_code">4</field>
         </record>
         <record model="account.tax.code.line.template"
             id="vat_code_iva_compra105-vat_105_compras-invoice">
@@ -371,7 +318,8 @@ the full copyright notices and license terms. -->
             <field name="invoice_account" ref="iva_credito_fiscal"/>
             <field name="credit_note_account" ref="iva_credito_fiscal"/>
             <field name="account" ref="root"/>
-            <field name="group" ref="grupo_iva_compra"/>
+            <field name="group" ref="account_ar.grupo_iva_compra"/>
+            <field name="iva_code">6</field>
         </record>
         <record model="account.tax.code.line.template"
             id="vat_code_iva_compra27-vat_27_compras-invoice">
@@ -399,7 +347,8 @@ the full copyright notices and license terms. -->
             <field name="invoice_account" ref="iva_credito_fiscal"/>
             <field name="credit_note_account" ref="iva_credito_fiscal"/>
             <field name="account" ref="root"/>
-            <field name="group" ref="grupo_iva_compra"/>
+            <field name="group" ref="account_ar.grupo_iva_compra"/>
+            <field name="iva_code">3</field>
         </record>
         <record model="account.tax.code.line.template"
             id="vat_code_iva_compra0-vat_0_compras-invoice">
@@ -427,7 +376,8 @@ the full copyright notices and license terms. -->
             <field name="invoice_account" ref="iva_credito_fiscal"/>
             <field name="credit_note_account" ref="iva_credito_fiscal"/>
             <field name="account" ref="root"/>
-            <field name="group" ref="grupo_iva_compra"/>
+            <field name="group" ref="account_ar.grupo_iva_compra"/>
+            <field name="iva_code">9</field>
         </record>
         <record model="account.tax.code.line.template"
             id="vat_code_iva_compra025-vat_025_compras-invoice">
