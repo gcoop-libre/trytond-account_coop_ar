@@ -1,8 +1,10 @@
-# -*' coding: utf8 -*-
+# -*- coding: utf-8 -*-
+# This file is part of the account_coop_ar module for Tryton.
+# The COPYRIGHT file at the top level of this repository contains
+# the full copyright notices and license terms.
 
 import csv
 import xml.etree.ElementTree as ET
-
 from unicodedata import normalize
 
 
@@ -20,15 +22,16 @@ def sanitize(unicode_string):
     """cleanup an string, to use as id"""
     return normalizar_string(unicode_string).replace(' ', '_').replace('.', '')
 
+
 def indent(elem, level=0):
-    i = "\n" + level*"  "
+    i = "\n" + level * "  "
     if len(elem):
         if not elem.text or not elem.text.strip():
             elem.text = i + "  "
         if not elem.tail or not elem.tail.strip():
             elem.tail = i
         for elem in elem:
-            indent(elem, level+1)
+            indent(elem, level + 1)
         if not elem.tail or not elem.tail.strip():
             elem.tail = i
     else:
@@ -38,6 +41,7 @@ def indent(elem, level=0):
 
 class XMLElement(object):
     """Abstract Represents a xml element"""
+
     def __init__(self, tag, attrs={}, value=None):
         self.element = ET.Element(tag, attrs)
         if value:
@@ -63,16 +67,18 @@ class Document(object):
 
 class Field(XMLElement):
     """Represents a Field of tryton"""
+
     def __init__(self, name, attrs={}, value=None):
         attrs['name'] = name
-        super(Field, self).__init__('field', attrs, value)
+        super().__init__('field', attrs, value)
 
 
 class Record(XMLElement):
     """Represents a record of a tryton model"""
+
     def __init__(self, model, id):
-        attrs = {'model': model, 'id': id,}
-        super(Record, self).__init__('record', attrs)
+        attrs = {'model': model, 'id': id}
+        super().__init__('record', attrs)
 
     def add_field(self, field):
         """Adds a new field inside the record"""
@@ -154,7 +160,8 @@ class WierdXMLGenerator(object):
         if id in self.record_ids:
             old_id = id
             id = '_'.join([id, code])
-            print("Wups, looks like you have duplicated names using '%s' instead '%s'" % (id, old_id))
+            print("Wups, looks like you have duplicated names "
+                "using '%s' instead '%s'" % (id, old_id))
 
         if kind == 'view':
             code += '*'
