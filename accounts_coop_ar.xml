@@ -666,36 +666,36 @@
         </record>
         <record model="account.account.template" id="ingresos_por_servicios_realizados">
             <field name="name">Ingresos por Servicios Realizados</field>
-            <field name="code">511</field>
+            <field name="code">5101</field>
             <field name="parent" ref="ingresos"/>
             <field name="type" ref="account_type_ingreso"/>
         </record>
         <record model="account.account.template" id="otros_ingresos">
             <field name="name">Otros Ingresos</field>
-            <field name="code">512*</field>
+            <field name="code">5102*</field>
             <field name="parent" ref="ingresos"/>
         </record>
         <record model="account.account.template" id="ingresos_de_servicios_realizados_en_el_exter">
             <field name="name">Ingresos de Servicios Realizados en el Exter.</field>
-            <field name="code">513</field>
+            <field name="code">5103</field>
             <field name="parent" ref="ingresos"/>
             <field name="type" ref="account_type_ingreso"/>
         </record>
         <record model="account.account.template" id="intereses_plazo_fijo">
             <field name="name">Intereses Plazo Fijo</field>
-            <field name="code">514</field>
+            <field name="code">5104</field>
             <field name="parent" ref="ingresos"/>
             <field name="type" ref="account_type_ingreso"/>
         </record>
         <record model="account.account.template" id="ingresos_por_ventas">
             <field name="name">Ingresos por Ventas</field>
-            <field name="code">515</field>
+            <field name="code">5105</field>
             <field name="parent" ref="ingresos"/>
             <field name="type" ref="account_type_ingreso"/>
         </record>
         <record model="account.account.template" id="ingresos_por_ventas_al_exterior">
             <field name="name">Ingresos por Ventas al Exterior</field>
-            <field name="code">516</field>
+            <field name="code">5106</field>
             <field name="parent" ref="ingresos"/>
             <field name="type" ref="account_type_ingreso"/>
         </record>
@@ -708,305 +708,305 @@
 
         <record model="account.account.template" id="gastos_administracion">
             <field name="name">Gastos Administración</field>
-            <field name="code">522*</field>
+            <field name="code">5202*</field>
             <field name="parent" ref="egresos"/>
         </record>
         <record model="account.account.template" id="honorarios_informatica">
             <field name="name">Honorarios Informática</field>
-            <field name="code">52201</field>
+            <field name="code">520201</field>
             <field name="parent" ref="gastos_administracion"/>
             <field name="type" ref="account_type_egreso"/>
         </record>
         <record model="account.account.template" id="servicios_informatica">
             <field name="name">Servicios Informática</field>
-            <field name="code">52202</field>
+            <field name="code">520202</field>
             <field name="parent" ref="gastos_administracion"/>
             <field name="type" ref="account_type_egreso"/>
         </record>
         <record model="account.account.template" id="honorarios_contables">
             <field name="name">Honorarios Contables</field>
-            <field name="code">52203</field>
+            <field name="code">520203</field>
             <field name="parent" ref="gastos_administracion"/>
             <field name="type" ref="account_type_egreso"/>
         </record>
         <record model="account.account.template" id="honorarios_legales">
             <field name="name">Honorarios Legales</field>
-            <field name="code">52204</field>
+            <field name="code">520204</field>
             <field name="parent" ref="gastos_administracion"/>
             <field name="type" ref="account_type_egreso"/>
         </record>
         <record model="account.account.template" id="honorarios_escribania">
             <field name="name">Honorarios Escribanía</field>
-            <field name="code">52205</field>
+            <field name="code">520205</field>
             <field name="parent" ref="gastos_administracion"/>
             <field name="type" ref="account_type_egreso"/>
         </record>
         <record model="account.account.template" id="honorarios_por_servicios">
             <field name="name">Honorarios por Servicios</field>
-            <field name="code">52206</field>
+            <field name="code">520206</field>
             <field name="parent" ref="gastos_administracion"/>
             <field name="type" ref="account_type_egreso"/>
         </record>
         <record model="account.account.template" id="telefonia">
             <field name="name">Telefonía</field>
-            <field name="code">52207</field>
+            <field name="code">520207</field>
             <field name="parent" ref="gastos_administracion"/>
             <field name="type" ref="account_type_egreso"/>
         </record>
         <record model="account.account.template" id="internet">
             <field name="name">Internet</field>
-            <field name="code">52208</field>
+            <field name="code">520208</field>
             <field name="parent" ref="gastos_administracion"/>
             <field name="type" ref="account_type_egreso"/>
         </record>
         <record model="account.account.template" id="seguros">
             <field name="name">Seguros</field>
-            <field name="code">52209</field>
+            <field name="code">520209</field>
             <field name="parent" ref="gastos_administracion"/>
             <field name="type" ref="account_type_egreso"/>
         </record>
         <record model="account.account.template" id="gastos_administrativos">
             <field name="name">Gastos Administrativos</field>
-            <field name="code">52210</field>
+            <field name="code">520210</field>
             <field name="parent" ref="gastos_administracion"/>
             <field name="type" ref="account_type_egreso"/>
         </record>
         <record model="account.account.template" id="papeleria_insumos_y_utiles">
             <field name="name">Papelería, Insumos y Utiles</field>
-            <field name="code">52211</field>
+            <field name="code">520211</field>
             <field name="parent" ref="gastos_administracion"/>
             <field name="type" ref="account_type_egreso"/>
         </record>
         <record model="account.account.template" id="articulos_limpieza_y_cafeteria">
             <field name="name">Artículos Limpieza y Cafetería</field>
-            <field name="code">52212</field>
+            <field name="code">520212</field>
             <field name="parent" ref="gastos_administracion"/>
             <field name="type" ref="account_type_egreso"/>
         </record>
         <record model="account.account.template" id="correo">
             <field name="name">Correo</field>
-            <field name="code">52213</field>
+            <field name="code">520213</field>
             <field name="parent" ref="gastos_administracion"/>
             <field name="type" ref="account_type_egreso"/>
         </record>
         <record model="account.account.template" id="ajuste_de_centavos">
             <field name="name">Ajuste de centavos</field>
-            <field name="code">52214</field>
+            <field name="code">520214</field>
             <field name="parent" ref="gastos_administracion"/>
             <field name="type" ref="account_type_egreso"/>
         </record>
         <record model="account.account.template" id="alquiler_de_equipos">
             <field name="name">Alquiler de Equipos</field>
-            <field name="code">52215</field>
+            <field name="code">520215</field>
             <field name="parent" ref="gastos_administracion"/>
             <field name="type" ref="account_type_egreso"/>
         </record>
 
         <record model="account.account.template" id="gastos_comercializacion">
             <field name="name">Gastos Comercialización</field>
-            <field name="code">524*</field>
+            <field name="code">5204*</field>
             <field name="parent" ref="egresos"/>
         </record>
         <record model="account.account.template" id="faltante_de_caja">
             <field name="name">Faltante de Caja</field>
-            <field name="code">52401</field>
+            <field name="code">520401</field>
             <field name="parent" ref="gastos_comercializacion"/>
             <field name="type" ref="account_type_egreso"/>
         </record>
         <record model="account.account.template" id="retornos_asociados">
             <field name="name">Retornos Asociados</field>
-            <field name="code">52402</field>
+            <field name="code">520402</field>
             <field name="parent" ref="gastos_comercializacion"/>
             <field name="type" ref="account_type_egreso"/>
         </record>
         <record model="account.account.template" id="eventos">
             <field name="name">Eventos</field>
-            <field name="code">52403</field>
+            <field name="code">520403</field>
             <field name="parent" ref="gastos_comercializacion"/>
             <field name="type" ref="account_type_egreso"/>
         </record>
         <record model="account.account.template" id="alojamiento_y_alimentacion">
             <field name="name">Alojamiento y Alimentación</field>
-            <field name="code">52404</field>
+            <field name="code">520404</field>
             <field name="parent" ref="gastos_comercializacion"/>
             <field name="type" ref="account_type_egreso"/>
         </record>
         <record model="account.account.template" id="traslados_y_viaticos">
             <field name="name">Traslados y Viáticos</field>
-            <field name="code">52405</field>
+            <field name="code">520405</field>
             <field name="parent" ref="gastos_comercializacion"/>
             <field name="type" ref="account_type_egreso"/>
         </record>
         <record model="account.account.template" id="impuestos_y_tasas">
             <field name="name">Impuestos y Tasas</field>
-            <field name="code">52406*</field>
+            <field name="code">520406*</field>
             <field name="parent" ref="gastos_comercializacion"/>
         </record>
         <record model="account.account.template" id="impuesto_a_los_ingresos_brutos">
             <field name="name">Impuesto a los Ingresos Brutos</field>
-            <field name="code">5240601</field>
+            <field name="code">52040601</field>
             <field name="parent" ref="impuestos_y_tasas"/>
             <field name="type" ref="account_type_egreso"/>
         </record>
         <record model="account.account.template" id="abl">
             <field name="name">A.B.L.</field>
-            <field name="code">5240602</field>
+            <field name="code">52040602</field>
             <field name="parent" ref="impuestos_y_tasas"/>
             <field name="type" ref="account_type_egreso"/>
         </record>
         <record model="account.account.template" id="arancel_y_timbrado_inaes">
             <field name="name">Arancel y timbrado INAES</field>
-            <field name="code">5240603</field>
+            <field name="code">52040603</field>
             <field name="parent" ref="impuestos_y_tasas"/>
             <field name="type" ref="account_type_egreso"/>
         </record>
         <record model="account.account.template" id="fondo_educativo_y_cooperativo">
             <field name="name">Fondo Educativo y Cooperativo</field>
-            <field name="code">5240604</field>
+            <field name="code">52040604</field>
             <field name="parent" ref="impuestos_y_tasas"/>
             <field name="type" ref="account_type_egreso"/>
         </record>
         <record model="account.account.template" id="multas_afip">
             <field name="name">Multas Afip</field>
-            <field name="code">5240605</field>
+            <field name="code">52040605</field>
             <field name="parent" ref="impuestos_y_tasas"/>
             <field name="type" ref="account_type_egreso"/>
         </record>
         <record model="account.account.template" id="gastos_de_representacion">
             <field name="name">Gastos de Representación</field>
-            <field name="code">52407</field>
+            <field name="code">520407</field>
             <field name="parent" ref="gastos_comercializacion"/>
             <field name="type" ref="account_type_egreso"/>
         </record>
         <record model="account.account.template" id="amortizaciones_bienes_de_uso">
             <field name="name">Amortizaciones Bienes de Uso</field>
-            <field name="code">52408</field>
+            <field name="code">520408</field>
             <field name="parent" ref="gastos_comercializacion"/>
             <field name="type" ref="account_type_egreso"/>
         </record>
         <record model="account.account.template" id="gastos_varios">
             <field name="name">Gastos Varios</field>
-            <field name="code">52409</field>
+            <field name="code">520409</field>
             <field name="parent" ref="gastos_comercializacion"/>
             <field name="type" ref="account_type_egreso"/>
         </record>
         <record model="account.account.template" id="publicidad_y_propaganda">
             <field name="name">Publicidad y Propaganda</field>
-            <field name="code">52410</field>
+            <field name="code">520410</field>
             <field name="parent" ref="gastos_comercializacion"/>
             <field name="type" ref="account_type_egreso"/>
         </record>
         <record model="account.account.template" id="gastos_de_exportacion">
             <field name="name">Gastos de Exportación</field>
-            <field name="code">52411</field>
+            <field name="code">520411</field>
             <field name="parent" ref="gastos_comercializacion"/>
             <field name="type" ref="account_type_egreso"/>
         </record>
         <record model="account.account.template" id="insumos_para_produccion">
             <field name="name">Insumos para Producción</field>
-            <field name="code">52412</field>
+            <field name="code">520412</field>
             <field name="parent" ref="gastos_comercializacion"/>
             <field name="type" ref="account_type_egreso"/>
         </record>
 
         <record model="account.account.template" id="gastos_financieros">
             <field name="name">Gastos Financieros</field>
-            <field name="code">525*</field>
+            <field name="code">5205*</field>
             <field name="parent" ref="egresos"/>
         </record>
         <record model="account.account.template" id="comisiones_y_gastos_bancarios">
             <field name="name">Comisiones y Gastos Bancarios</field>
-            <field name="code">52501</field>
+            <field name="code">520501</field>
             <field name="parent" ref="gastos_financieros"/>
             <field name="type" ref="account_type_egreso"/>
         </record>
         <record model="account.account.template" id="intereses_resarcitarios">
             <field name="name">Intereses Resarcitarios</field>
-            <field name="code">52502</field>
+            <field name="code">520502</field>
             <field name="parent" ref="gastos_financieros"/>
             <field name="type" ref="account_type_egreso"/>
         </record>
         <record model="account.account.template" id="gastos_por_imp_al_cheque">
             <field name="name">Gastos por Imp. al cheque</field>
-            <field name="code">52503</field>
+            <field name="code">520503</field>
             <field name="parent" ref="gastos_financieros"/>
             <field name="type" ref="account_type_egreso"/>
         </record>
         <record model="account.account.template" id="diferencia_de_cambio">
             <field name="name">Diferencia de Cambio</field>
-            <field name="code">52504</field>
+            <field name="code">520504</field>
             <field name="parent" ref="gastos_financieros"/>
             <field name="type" ref="account_type_egreso"/>
         </record>
         <record model="account.account.template" id="intereses_impositivos">
             <field name="name">Intereses Impositivos</field>
-            <field name="code">52505</field>
+            <field name="code">520505</field>
             <field name="parent" ref="gastos_financieros"/>
             <field name="type" ref="account_type_egreso"/>
         </record>
 
         <record model="account.account.template" id="gastos_generales">
             <field name="name">Gastos Generales</field>
-            <field name="code">526*</field>
+            <field name="code">5206*</field>
             <field name="parent" ref="egresos"/>
         </record>
         <record model="account.account.template" id="energia">
             <field name="name">Energía</field>
-            <field name="code">52601</field>
+            <field name="code">520601</field>
             <field name="parent" ref="gastos_generales"/>
             <field name="type" ref="account_type_egreso"/>
         </record>
         <record model="account.account.template" id="aysa">
             <field name="name">Aysa</field>
-            <field name="code">52602</field>
+            <field name="code">520602</field>
             <field name="parent" ref="gastos_generales"/>
             <field name="type" ref="account_type_egreso"/>
         </record>
         <record model="account.account.template" id="gas">
             <field name="name">Gas</field>
-            <field name="code">52603</field>
+            <field name="code">520603</field>
             <field name="parent" ref="gastos_generales"/>
             <field name="type" ref="account_type_egreso"/>
         </record>
         <record model="account.account.template" id="gastos_de_mantenimiento">
             <field name="name">Gastos de Mantenimiento</field>
-            <field name="code">52604</field>
+            <field name="code">520604</field>
             <field name="parent" ref="gastos_generales"/>
             <field name="type" ref="account_type_egreso"/>
         </record>
         <record model="account.account.template" id="expensas">
             <field name="name">Expensas</field>
-            <field name="code">52605</field>
+            <field name="code">520605</field>
             <field name="parent" ref="gastos_generales"/>
             <field name="type" ref="account_type_egreso"/>
         </record>
         <record model="account.account.template" id="cursos_y_conferencias">
             <field name="name">Cursos y Conferencias</field>
-            <field name="code">52606</field>
+            <field name="code">520606</field>
             <field name="parent" ref="gastos_generales"/>
             <field name="type" ref="account_type_egreso"/>
         </record>
         <record model="account.account.template" id="suscripciones">
             <field name="name">Suscripciones</field>
-            <field name="code">52607</field>
+            <field name="code">520607</field>
             <field name="parent" ref="gastos_generales"/>
             <field name="type" ref="account_type_egreso"/>
         </record>
         <record model="account.account.template" id="alquileres_sede_social">
             <field name="name">Alquileres Sede Social</field>
-            <field name="code">52608</field>
+            <field name="code">520608</field>
             <field name="parent" ref="gastos_generales"/>
             <field name="type" ref="account_type_egreso"/>
         </record>
         <record model="account.account.template" id="donaciones">
             <field name="name">Donaciones</field>
-            <field name="code">52609</field>
+            <field name="code">520609</field>
             <field name="parent" ref="gastos_generales"/>
             <field name="type" ref="account_type_egreso"/>
         </record>
         <record model="account.account.template" id="comisiones_y_sellados">
             <field name="name">Comisiones y Sellados</field>
-            <field name="code">52610</field>
+            <field name="code">520610</field>
             <field name="parent" ref="gastos_generales"/>
             <field name="type" ref="account_type_egreso"/>
         </record>
